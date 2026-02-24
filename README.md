@@ -12,3 +12,24 @@
 <p align="center">
   <b>FinGuard AI</b> is an intelligent financial assistant that combines real-time financial data (Yahoo Finance) with synthetic document analysis through RAG (Retrieval-Augmented Generation).
 </p>
+
+---
+
+## 📋 Table of Contents
+- [Project Overview](#-project-overview)
+- [Architecture & Workflow](#-architecture--workflow)
+- [Features](#-features)
+- [Technology Stack](#-technology-stack)
+- [Project Structure](#-project-structure)
+- [Installation & Setup](#-installation--setup)
+- [Usage Guide](#-usage-guide)
+- [Available Companies](#-available-companies)
+- [API Endpoints](#-api-endpoints)
+- [Query Examples](#-query-examples)
+- [RAG Knowledge Base](#-rag-knowledge-base)
+- [Troubleshooting](#-troubleshooting)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
