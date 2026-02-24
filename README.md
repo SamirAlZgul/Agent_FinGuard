@@ -148,7 +148,7 @@ The project demonstrates the capabilities of modern AI agents in the financial d
 ---
 
 
-### 📌 Key Files Description
+## 📌 Project Structure
 
 | File | Description |
 |------|-------------|
