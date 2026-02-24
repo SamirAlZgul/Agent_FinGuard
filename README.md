@@ -148,5 +148,66 @@ The project demonstrates the capabilities of modern AI agents in the financial d
 ---
 
 
+### 📌 Key Files Description
+
+| File | Description |
+|------|-------------|
+| `api_server.py` | FastAPI server handling HTTP requests from Streamlit UI to agent. Runs on port 8000. |
+| `ui_streamlit.py` | Streamlit-based chat interface with sidebar for settings, session management, and query examples. Runs on port 8501. |
+| `finance_tools.py` | Core LangGraph agent implementation containing all available tools (MCP for real companies, RAG for fictional companies). |
+| `rag_knowledge_base.py` | RAG system implementation with HuggingFace embeddings, ChromaDB integration, and semantic search functionality. |
+| `mcp_client.py` | MCP (Model Context Protocol) client for Yahoo Finance API providing real-time stock data, company info, and financial ratios. |
+| `load_financial_docs.py` | Utility script that generates 30+ synthetic financial documents and loads them into ChromaDB vector store. |
+| `__init__.py` | Makes the tools directory a Python package for proper imports. |
+
+---
+
+### 📂 Directory Details
+
+#### **`tools/` - Core Application Directory**
+Contains all Python modules that power the FinGuard AI assistant:
+- **API Layer**: `api_server.py` - REST endpoints
+- **UI Layer**: `ui_streamlit.py` - User interface
+- **Agent Layer**: `finance_tools.py` - AI orchestration
+- **Data Layer**: `rag_knowledge_base.py`, `mcp_client.py` - Data sources
+- **Utilities**: `load_financial_docs.py` - Setup and maintenance
+
+#### **`financial_docs/` - Document Storage**
+Auto-generated directory containing:
+- Quarterly and annual reports for 30+ fictional companies
+- Industry analysis reports
+- Macroeconomic outlook documents
+- All files are in `.txt` format for easy processing
+
+#### **`chroma_db/` - Vector Database**
+Auto-created directory containing:
+- ChromaDB SQLite database
+- Indexed embeddings for all document chunks
+- Persistent storage for semantic search
+
+#### **Root Directory Files**
+| File | Purpose |
+|------|---------|
+| `requirements.txt` | Complete list of Python dependencies with version specifications |
+| `.env` | Environment variables for API keys and configuration (optional) |
+| `.gitignore` | Git ignore rules for virtual environment, cache files, and local data |
+| `README.md` | Project documentation, setup instructions, and usage guide |
+
+---
+
+### 🔧 File Dependencies
+
+```mermaid
+graph TD
+    A[ui_streamlit.py] -->|HTTP requests| B[api_server.py]
+    B -->|function calls| C[finance_tools.py]
+    C -->|tool imports| D[rag_knowledge_base.py]
+    C -->|tool imports| E[mcp_client.py]
+    D -->|document loading| F[load_financial_docs.py]
+    D -->|vector storage| G[(chroma_db/)]
+    F -->|generates| H[(financial_docs/)]
+    E -->|API calls| I[Yahoo Finance]
+
+
 
 
