@@ -51,6 +51,29 @@ The project demonstrates the capabilities of modern AI agents in the financial d
 ## 🏗 Architecture & Workflow
 ![Query plan](https://github.com/SamirAlZgul/Agent_FinGuard/blob/dev/query_plan.png?raw=true)
 
+### 📋 Detailed Interaction Flow
+
+| Step | From | To | Action | Data Format |
+|------|------|----|--------|-------------|
+| **1** | **User** | **Streamlit UI** | Query entered in chat interface | `string` (natural language) |
+| **2** | **Streamlit** | **FastAPI Server** | HTTP POST request to `/agent/run` | `JSON: {"text": "query", "session_id": "uuid"}` |
+| **3** | **FastAPI** | **Agent** | `run_agent()` function call | `(query: str, session_id: str) → str` |
+| **4** | **Agent** | **LangGraph** | Create messages array and invoke agent | `{"messages": [{"role": "user", "content": query}]}` |
+| **5** | **LangGraph** | **Ollama LLM** | Pass prompt to LLM for analysis | LangChain message format |
+| **6** | **Ollama** | **LangGraph** | Return tool decision | ReAct format with Action/Action Input |
+| **7** | **LangGraph** | **Tools** | Execute selected tool | Function call with parameters |
+| **8** | **MCP Tools** | **Yahoo Finance** | Fetch real-time financial data | REST API call via `yfinance` |
+| **9** | **RAG Tools** | **ChromaDB** | Semantic search in vector DB | `similarity_search_with_score()` |
+| **10** | **Tools** | **LangGraph** | Return observation data | Formatted string with results |
+| **11** | **LangGraph** | **Ollama LLM** | Send observation for final response | Observation + conversation history |
+| **12** | **Ollama** | **LangGraph** | Generate natural language answer | `string` (final response) |
+| **13** | **LangGraph** | **Agent** | Extract and process response | `AIMessage` object |
+| **14** | **Agent** | **FastAPI** | Clean response with `safe_str()` | `string` (sanitized UTF-8) |
+| **15** | **FastAPI** | **Streamlit** | Return JSON response | `{"response": "answer", "session_id": "uuid", "tools_used": [...]}` |
+| **16** | **Streamlit** | **User** | Display message in chat | Rendered markdown in UI |
+
+---
+
 
 
 
