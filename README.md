@@ -23,12 +23,6 @@
 - [Project Structure](#-project-structure)
 - [Installation & Setup](#-installation--setup)
 - [Usage Guide](#-usage-guide)
-- [Available Companies](#-available-companies)
-- [API Endpoints](#-api-endpoints)
-- [Query Examples](#-query-examples)
-- [RAG Knowledge Base](#-rag-knowledge-base)
-- [Troubleshooting](#-troubleshooting)
-- [Roadmap](#-roadmap)
 - [Contributing](#-contributing)
 - [License](#-license)
 
@@ -208,7 +202,7 @@ graph TD
 ```
 ---
 
-## 🚀Installation & Setup
+## 📌 Installation & Setup
 
 In order to launch a project, you need to:
 
