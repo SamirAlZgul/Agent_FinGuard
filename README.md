@@ -8,3 +8,7 @@
   <img src="https://img.shields.io/badge/Ollama-llama3.1-yellow?style=for-the-badge&logo=llama" alt="Ollama">
   <img src="https://img.shields.io/badge/ChromaDB-0.4-purple?style=for-the-badge" alt="ChromaDB">
 </p>
+
+<p align="center">
+  <b>FinGuard AI</b> is an intelligent financial assistant that combines real-time financial data (Yahoo Finance) with synthetic document analysis through RAG (Retrieval-Augmented Generation).
+</p>
