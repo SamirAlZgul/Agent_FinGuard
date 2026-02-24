@@ -15,16 +15,27 @@
 
 ---
 
+
 ## 📋 Table of Contents
+- [API Demonstration](#-api-demonstration)
 - [Project Overview](#-project-overview)
 - [Architecture & Workflow](#-architecture--workflow)
 - [Features](#-features)
 - [Technology Stack](#-technology-stack)
 - [Project Structure](#-project-structure)
 - [Installation & Setup](#-installation--setup)
-- [Usage Guide](#-usage-guide)
 - [Contributing](#-contributing)
 - [License](#-license)
+
+
+## 📡 API Demonstration
+
+
+
+
+
+
+
 
 ---
 
