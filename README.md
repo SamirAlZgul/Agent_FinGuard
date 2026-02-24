@@ -266,8 +266,7 @@ You should see: "Ollama is running"
 cd tools
 python load_financial_docs.py
 ```
-You should see something like this: 
-{'total_chunks': 92, 'persist_directory': './chroma_db', 'embedding_model': 'sentence-transformers/all-MiniLM-L6-v2'}
+You should see something like this: total_chunks: 92
 
 8. Launch server in a new terminal
 ```bash
