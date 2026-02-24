@@ -252,10 +252,6 @@ curl -fsSL https://ollama.com/install.sh | sh
 ```bash
 ollama pull llama3.1:8b 
 ```
-You will see something like this
-ollama list
-NAME           ID              SIZE      MODIFIED      
-llama3.1:8b    46e0c10c039e    4.9 GB    5 minutes ago
 
 6. Checking if ollama is working in your browser
 http://localhost:11434
