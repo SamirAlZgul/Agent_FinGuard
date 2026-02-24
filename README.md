@@ -228,22 +228,22 @@ project was testing on Python 3.11.9
 ```bash
 python -m venv venv
 ```
-# Activate it:
-# For Windows (Command Prompt)
+Activate it:
+For Windows (Command Prompt)
 ```bash
 venv\Scripts\activate
 ```
-# For macOS/Linux
+For macOS/Linux
 ```bash
 source venv/bin/activate
 ```
 
 4. Install ollama
-# For Windows (PowerShell as Administrator)
+For Windows (PowerShell as Administrator)
 ```bash
 irm https://ollama.com/install.ps1 | iex
 ```
-# For macOS/Linux
+For macOS/Linux
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
@@ -277,8 +277,5 @@ python api_server.py
 ```bash
 streamlit run ui_streamlit.py
 ```
-
-
-🆘 TroubleshootingIssueSolution"Python not found"Install Python 3.11 from&nbsp;[python.org](https://python.org/" target="_blank" rel="noreferrer" style="color: rgb(57, 100, 254); transition-duration: 0.2s; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: box-shadow; border-width: 2px 3px; border-style: solid; border-color: rgba(255, 255, 255, 0); margin-left: -3px; margin-right: -3px; position: relative;)"pip not found"Ensure Python is installed correctly or use&nbsp;python -m pip"Ollama not recognized"Restart terminal or add Ollama to PATH"Port 8000 already in use"lsof -ti:8000 | xargs kill -9&nbsp;(macOS/Linux) or find and kill process (Windows)"Module not found"Ensure virtual env is activated:&nbsp;pip install -r requirements.txt"Connection refused"Make sure all servers are running (API, Ollama)
 
 
