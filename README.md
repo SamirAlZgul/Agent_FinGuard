@@ -74,6 +74,35 @@ The project demonstrates the capabilities of modern AI agents in the financial d
 
 ---
 
+## ✨ Features
+
+### 📊 Real Companies (Yahoo Finance)
+- ✅ **Real-time stock prices** - current quotes retrieval
+- ✅ **Company information** - profile, sector, industry, business description
+- ✅ **Historical data** - prices for periods (1d, 5d, 1mo, 3mo, 6mo, 1y)
+- ✅ **Financial ratios** - P/E, P/B, ROE, margins, and more
+
+### 📚 Fictional Companies (RAG)
+- ✅ **Document search** - semantic search in financial reports
+- ✅ **30+ synthetic companies** - across various economic sectors
+- ✅ **Quarterly and annual reports** - detailed financial information
+- ✅ **Industry analysis reports** - macroeconomic insights
+- ✅ **Company comparisons** - analysis across different metrics
+
+### 🧠 AI Capabilities
+- ✅ **ReAct agent** - action planning and execution
+- ✅ **Local LLM** - Ollama with llama3.1:8b model
+- ✅ **Context awareness** - conversation history tracking
+- ✅ **Multi-tool orchestration** - combining different data sources
+
+### 🖥️ User Interface
+- ✅ **Chat interface** - intuitive conversation
+- ✅ **Session history** - context preservation
+- ✅ **Query examples** - quick start for new users
+- ✅ **Tool visibility** - transparency about used tools
+- ✅ **Sidebar** - information about available companies
+
+---
 
 
 
