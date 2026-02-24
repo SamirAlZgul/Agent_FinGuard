@@ -195,8 +195,6 @@ Auto-created directory containing:
 
 ---
 
-### 🔧 File Dependencies
-
 ```mermaid
 graph TD
     A[ui_streamlit.py] -->|HTTP requests| B[api_server.py]
@@ -207,6 +205,65 @@ graph TD
     D -->|vector storage| G[(chroma_db/)]
     F -->|generates| H[(financial_docs/)]
     E -->|API calls| I[Yahoo Finance]
+
+
+## 🚀Installation & Setup
+
+In order to launch a project, you need to:
+
+1. Clone repository
+```bash
+git clone https://github.com/SamirAlZgul/Agent_FinGuard
+```
+2. Check your python version:
+```bash
+python --version
+```
+project was testing on Python 3.11.9
+
+
+3. Create and activate virtual environment:
+```bash
+python -m venv venv
+```
+```bash
+venv\Scripts\activate
+```
+4. Install ollama
+```bash
+irm https://ollama.com/install.ps1 | iex
+```
+
+5. Pull ollama image of a model
+```bash
+ollama pull llama3.1:8b 
+```
+You will see something like this
+ollama list
+NAME           ID              SIZE      MODIFIED      
+llama3.1:8b    46e0c10c039e    4.9 GB    5 minutes ago
+
+6. Checking if ollama is working in your browser
+http://localhost:11434
+You should see: "Ollama is running"
+
+7. Loading documents if DB
+```bash
+cd tools
+python load_financial_docs.py
+```
+You should see something like this: "{'total_chunks': 92, 'persist_directory': './chroma_db', 'embedding_model': 'sentence-transformers/all-MiniLM-L6-v2'}"
+
+8. Launch server in a new terminal
+```bash
+python api_server.py
+```
+
+9. Launch UI interface in a new terminal
+```bash
+streamlit run ui_streamlit.py
+```
+
 
 
 
