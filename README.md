@@ -104,7 +104,48 @@ The project demonstrates the capabilities of modern AI agents in the financial d
 
 ---
 
+## 🛠 Technology Stack
 
+### Backend
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| Python | 3.11 | Core programming language |
+| FastAPI | 0.104 | REST API server |
+| Uvicorn | 0.24 | ASGI server |
+| LangChain | 0.2 | AI agent framework |
+| LangGraph | 0.2 | Agent orchestration |
+| Pydantic | 2.4 | Data validation |
+
+### Frontend
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| Streamlit | 1.28 | Web interface |
+| Requests | 2.31 | HTTP client |
+
+### Machine Learning & RAG
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| Ollama | latest | Local LLM server |
+| llama3.1:8b | 8B | Language model |
+| ChromaDB | 0.4 | Vector database |
+| Sentence-Transformers | 2.2 | Embedding model |
+| Transformers | 4.36 | Transformers library |
+| PyTorch | 2.1 | Deep learning framework |
+
+### Financial Data
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| yfinance | 0.2 | Yahoo Finance API |
+| pandas | 2.2 | Data analysis |
+| numpy | 1.26 | Numerical computing |
+
+### Document Processing
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| PyPDF | 4.0 | PDF file reading |
+| PyPDF2 | 3.0 | Alternative PDF parser |
+
+---
 
 
 
