@@ -49,7 +49,7 @@ The project demonstrates the capabilities of modern AI agents in the financial d
 ---
 
 ## 🏗 Architecture & Workflow
-
+![Query plan](https://github.com/SamirAlZgul/Agent_FinGuard/blob/dev/query_plan.png?raw=true)
 
 
 
