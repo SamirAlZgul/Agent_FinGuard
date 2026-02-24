@@ -205,7 +205,8 @@ graph TD
     D -->|vector storage| G[(chroma_db/)]
     F -->|generates| H[(financial_docs/)]
     E -->|API calls| I[Yahoo Finance]
-
+```
+---
 
 ## 🚀Installation & Setup
 
