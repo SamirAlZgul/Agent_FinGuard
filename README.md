@@ -33,3 +33,27 @@
 - [License](#-license)
 
 ---
+
+---
+
+## 🔍 Project Overview
+
+**FinGuard AI** is a hybrid financial assistant capable of working with two types of data:
+
+1. **Real Companies** - retrieving up-to-date financial data via Yahoo Finance API (stock prices, company information, historical data, financial ratios)
+
+2. **Synthetic/Fictional Companies** - analyzing financial documents through RAG (Retrieval-Augmented Generation) using ChromaDB vector database
+
+The project demonstrates the capabilities of modern AI agents in the financial domain and serves as a testing platform for various approaches to financial information processing.
+
+---
+
+## 🏗 Architecture & Workflow
+
+
+
+
+
+
+
+
