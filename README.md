@@ -268,5 +268,3 @@ python api_server.py
 streamlit run ui_streamlit.py
 ```
 
-## 📌 Installation & Setup
-
