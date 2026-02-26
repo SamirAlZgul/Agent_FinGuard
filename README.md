@@ -280,7 +280,7 @@ streamlit run ui_streamlit.py
 
 Contributions are welcome and appreciated! Here's how you can contribute:
 
-# Ways to Contribute
+### Ways to Contribute
 🐛 Report bugs - Create an issue with detailed reproduction steps
 💡 Suggest features - Share your ideas for improvements
 📝 Improve documentation - Fix typos, add examples, clarify instructions
