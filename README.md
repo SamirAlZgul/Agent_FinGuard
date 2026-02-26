@@ -286,7 +286,9 @@ Contributions are welcome and appreciated! Here's how you can contribute:
 📝 Improve documentation - Fix typos, add examples, clarify instructions
 🔧 Submit pull requests - Fix issues or add new features
 
-## 📌 Lisence
+
+## 📌 License
+
 MIT License
 
 Copyright (c) 2024 Samir AlZgul
